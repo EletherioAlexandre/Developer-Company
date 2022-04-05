@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('../assets/grayBG.jpg');
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 10px;
+    padding-left: 10px;
+    box-shadow: 0 2px red;
+}
+
+nav span {
+    color: #D6000D;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: #D6000D;
+    color: #fff!important;
+}
+
+.nav-fill .nav-item .nav-link, .nav-justified .nav-item .nav-link {
+    color: #000;
+}
+
+.container {
+    display: flex;
+    margin-top: 90px; 
+}
+
+.container img {
+    width: 280px;
+    height: 230px;
+}
+
+.container .col .nav-link.active {
+    background-color: #D6000D;
+    width: 100%;
+}
+
+.container .col p {
+    font-size: x-large;
+    letter-spacing: 1px;
+}
+
+.container .col p span {
+    font-weight: bolder;
+    color: #D6000D;
+}
