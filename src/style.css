@@ -1,22 +1,28 @@
-* {
+
+*, body {
     margin: 0;
     padding: 0;
 }
 
 body {
-    background-image: url('../assets/grayBG.jpg');
+    font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-nav {
+header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-right: 10px;
     padding-left: 10px;
     box-shadow: 0 2px red;
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    opacity: 1;
+    z-index: 1;
 }
 
-nav span {
+header span {
     color: #D6000D;
 }
 
@@ -29,27 +35,155 @@ nav span {
     color: #000;
 }
 
-.container {
-    display: flex;
-    margin-top: 90px; 
+.nav-link:hover {
+    background-color: #d3d3d3;
 }
 
-.container img {
+.nav-link.active:hover {
+    background-color: #000;
+}
+
+.btn.btn-danger {
+    background-color: #D6000D;
+    color: #fff;
+}
+
+.btn.btn-danger:hover {
+    background-color: #000;
+}
+
+.container {
+    display: grid;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-items: stretch;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    margin-top: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.content img {
     width: 280px;
     height: 230px;
 }
 
-.container .col .nav-link.active {
+.content .col .nav-link.active {
     background-color: #D6000D;
     width: 100%;
 }
 
-.container .col p {
-    font-size: x-large;
-    letter-spacing: 1px;
+.content .col p {
+    font-size: xx-large;
 }
 
-.container .col p span {
+.content .col p span {
     font-weight: bolder;
+    font-size: 45px;
     color: #D6000D;
+}
+
+.content .col, .secondary-content .col {
+    display: grid;
+    justify-items: start;
+    align-content: space-around;
+    justify-content: center;
+}
+
+.secondary-content {
+    margin-top: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.secondary-content .col img {
+    width: 280px;
+    height: 230px;
+}
+
+
+.fa-check-circle:before, .fa-circle-check:before {
+    color: #D6000D;
+}
+
+.form-control {
+    background-color: #d3d3d3;
+    width: 175px;
+}
+
+.label {
+    font-weight: bolder;
+}
+
+.btn.btn-primary.mb-3 {
+    background-color: #D6000D;
+    border-color: transparent;
+    width: 175px;
+    position: absolute;
+
+}
+
+.row.g-3 {
+    position: absolute;
+    margin-left: 185px;
+}
+
+
+.card {
+    width: 370px;
+    height: 130px;
+    margin-top: 150px;
+    margin-left: 200px;
+    display: flex;
+    flex-direction: row;
+    padding: 8px 0px 0px 6px;
+    background-color: #d3d3d3;
+    justify-content: center;
+}
+
+.card-one {
+    display: flex;
+}
+
+.red-dot{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.card-one-text p {
+    font-size: smaller;
+}
+
+.card-img-top.rounded-circle {
+    width: 70px;
+    height: 60px;
+    background-color: #D6000D;
+}
+
+.card .card-one-text {
+    padding-left: 20px;
+    width: 280px;
+}
+
+.card-container {
+    display: flex;
+    justify-items: start;
+    align-items: center;
+    justify-content: start;
+}
+
+footer {
+    margin-top: 30px;
+    width: 100%;
+    height: 100px;
+    background-color: #000;
 }
