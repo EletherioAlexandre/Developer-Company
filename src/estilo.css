@@ -1,0 +1,32 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #d3d3d3;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 20vh 70vh 10vh;
+    grid-template-areas: "header header"
+                         "main main"
+                         "footer footer";
+   
+}
+
+header {
+    grid-area: header;
+    background: yellow;
+}
+
+main {
+    grid-area: main;
+    background: red;
+
+}
+
+footer {
+    grid-area: footer;
+    background: blue;
+}
