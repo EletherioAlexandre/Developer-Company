@@ -10,7 +10,7 @@
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-rows: 20vh 70vh 10vh;
+    grid-template-rows: 20vh 70vh 100vh;
     grid-template-areas: "header header" "main main" "footer footer";
     background: #d3d3d3;
 
@@ -24,7 +24,8 @@
     align-items: center;
     justify-content: space-between;
     padding-right: 10px;
-    box-shadow: 0 2px red;
+    box-shadow: 0 2px 17px 0px #000;
+    border-bottom-left-radius: 20px;
     position: fixed;
     width: 100%;
     background-color: #fff;
@@ -33,10 +34,9 @@
                     
 }
 
-
-
 .header-content span {
     color: #D6000D;
+    padding-left: 10px;
 }
 
 main {
@@ -49,6 +49,7 @@ footer {
     height: 50vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row: none;
 }
 
 .header-content .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
@@ -63,6 +64,7 @@ footer {
 
 .header-content .nav-fill .nav-item .nav-link, .nav-justified .nav-item .nav-link {
     color: #000;
+    cursor: pointer;
 }
 
 .header-content .nav-link:hover {
@@ -125,6 +127,7 @@ footer {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    flex-direction: row-reverse;
 }
 
 .secondary-content .col img {
@@ -154,9 +157,8 @@ footer {
 
 }
 
-.row.g-3 {
-    position: absolute;
-    margin-left: 185px;
+.third-content {
+    display: flex;
 }
 
 

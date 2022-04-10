@@ -11,6 +11,10 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <script
+      src="https://kit.fontawesome.com/d2c5d78823.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Homologação Grid</title>
   </head>
   <body>
@@ -29,7 +33,7 @@
               <a class="nav-link" href="#">Contato</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Login</a>
+              <a class="nav-link active" aria-current="page" href="#" onclick="login()">Login</a>
             </li>
           </ul>
         </div>
@@ -46,7 +50,10 @@
             </button>
           </div>
         </div>
-        <!-- <div class="secondary-content">
+        <div class="secondary-content">
+          <div class="col">
+            <img src="../assets/coding_.png" alt="coding" />
+          </div>
           <div class="col">
             <ul class="fa-ul">
               <li>
@@ -82,33 +89,18 @@
               </li>
             </ul>
           </div>
+        </div>
+        <div class="third-content">
           <div class="col">
-            <img src="../assets/coding_.png" alt="coding" />
-          </div>
-        </div> -->
-        <!-- <div class="third-content">
-          <div class="col-input">
-            <form class="row g-3">
-              <label for="inputTel" class="label"
-                >Nossa equipe está à disposição!</label
-              >
+              <label>Nossa equipe está à disposição!</label>
               <div class="col-auto">
-                <input
-                  type="tel"
-                  class="form-control"
-                  id="inputTel"
-                  placeholder="Celular"
-                />
+                <input type="tel" class="form-control" id="inputCellphone" placeholder="Celular" />
+                <div class="col-auto">
+                  <button type="submit" class="btn btn-primary mb-3">Confirm identity</button>
+                </div>
               </div>
-              <div class="col-auto">
-                <button type="submit" class="btn btn-primary mb-3">
-                  Ligamos para você
-                </button>
-              </div>
-            </form>
-          </div>
-        </div> -->
-        <!-- <div class="card-container">
+        </div>
+        <div class="card-container">
           <div class="card">
             <div class="card-one">
               <div class="red-dot">
@@ -135,7 +127,7 @@
               <p>Pedro Ferreira <br />Construtora Minari</p>
             </div>
           </div>
-        </div> -->
+        </div>
       </main>
       <footer style="color: #fff">
         <div class="grid-1">
@@ -144,13 +136,14 @@
         </div>
         <div class="grid-2">
           <h3>Sobre</h3>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+          <p>Amamos criar soluções <br />
+            e entregar sites incríveis</p>
         </div>
         <div class="grid-3">
           <h3>Contato</h3>
-          <p>Lorem</p>
-          <p>Ipsum</p>
-          <p>Dev Challenge</p>
+          <p>123 Av. Manjar - Nárnia</p>
+          <p>+55 96 2321-3131</p>
+          <p>contato@codar.com</p>
         </div>
         <div class="grid-4">
           <h3>Redes Sociais</h3>
