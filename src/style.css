@@ -3,11 +3,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: sans-serif
 }
 
 body, html {
-    background-color: #d3d3d3;
+    background-color: #fff;
 }
 
 .container-body {
@@ -16,7 +16,7 @@ body, html {
     display: grid;
     grid-template-rows: 20vh 70vh 100vh;
     grid-template-areas: "header header" "main main" "footer footer";
-    background: #d3d3d3;
+    background: #fff;
 
 }
 
@@ -45,16 +45,18 @@ body, html {
 
 main {
     grid-area: main;
+    position: relative;
 }
 
 footer {
     grid-area: footer;
     background: rgb(0, 0, 0);
-    height: 26vh;
+    height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-row: none;
     justify-items: center;
+    margin-top: 30px;
 }
 
 .header-content .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
@@ -146,7 +148,7 @@ footer {
 }
 
 .form-control {
-    background-color: #d3d3d3;
+    background-color: #d3d3d3!important;
     width: 95%!important;
 }
 
@@ -163,7 +165,9 @@ footer {
 }
 
 .btn.btn-primary.mb-3:hover {
-    background-color: #000;
+        color: #fff;
+        background-color: #000;
+        border-color: #b02a37;
 }
 
 .third-content {
@@ -183,20 +187,20 @@ footer {
 }
 
 .card {
-    width: 370px;
-    height: 130px;
+    width: auto;
     margin-top: 150px;
     display: flex;
     flex-direction: row!important;
     padding: 8px 0px 0px 6px;
-    background-color: #d3d3d3;
+    background-color: #d3d3d3!important;
     align-items: flex-start;
     justify-content: center;
     flex-wrap: wrap;
     align-content: flex-start;
+    height: 145px;
 }
 
-.card-one {
+.card-one, .card-two {
     display: flex;
 }
 
@@ -207,7 +211,7 @@ footer {
 }
 
 .card-one-text p {
-    font-size: smaller;
+    font-size: 13px;
 }
 
 .card-img-top.rounded-circle {
@@ -216,9 +220,13 @@ footer {
     background-color: #D6000D;
 }
 
-.card .card-one-text {
+.card .card-one-text, .card .card-two-text {
     padding-left: 20px;
     width: 280px;
+}
+
+.card-two-text {
+    font-size: 14px;
 }
 
 .card-container {
@@ -230,6 +238,15 @@ footer {
     align-items: center;
     justify-content: space-evenly;
     position: relative;
+}
+
+.name-card {
+    font-weight: bolder;
+}
+
+.btn-primary:hover {
+    background-color: #b02a37;
+    border-color: #b02a37;
 }
 
 .facebook, .twitter {
