@@ -37,7 +37,8 @@
                 class="nav-link active"
                 aria-current="page"
                 href="#"
-                onclick="login()"
+                id="open-login"
+                onclick="openModalLogin()"
                 >Login</a
               >
             </li>
@@ -51,7 +52,12 @@
           </div>
           <div class="col">
             <p>Alavanque seu negócio com um <span>Website incrível</span></p>
-            <button type="button" class="btn btn-danger">
+            <button
+              type="button"
+              class="btn btn-danger"
+              id="open-orcamento"
+              onclick="openModalOrcamento()"
+            >
               Solicitar Orçamento
             </button>
           </div>
@@ -99,7 +105,11 @@
         <div class="third-content">
           <form class="row g-3">
             <div class="col-auto">
-              <button type="submit" class="btn btn-primary mb-3">
+              <button
+                type="submit"
+                class="btn btn-primary mb-3"
+                id="liveToastBtn"
+              >
                 Ligamos para você
               </button>
             </div>
@@ -187,5 +197,42 @@
         </footer>
       </main>
     </div>
+    <div class="modal-container1" id="modal-container1">
+      <div class="modal-login">
+        <h2>Modal Login</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores
+          ducimus deserunt maiores nisi accusamus voluptate in laudantium
+          quidem, nostrum recusandae voluptas labore, iusto a corporis
+          consequatur veritatis, ipsam nobis facere.
+        </p>
+        <button id="close-login">Close</button>
+      </div>
+    </div>
+    <div class="modal-container-orcamento" id="modal-container-orcamento">
+      <div class="modal-orcamento" id="modal-orcamento">
+        <h2>Modal Orçamento</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore alias
+          exercitationem architecto voluptates temporibus eos nostrum corporis
+          mollitia perferendis id. Quod placeat, quas deserunt nobis reiciendis
+          possimus ut velit expedita.
+        </p>
+        <button id="close-orcamento">Close</button>
+      </div>
+    </div>
+    <div class="toast-container">
+      <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+          <img src="..." class="rounded me-2" alt="...">
+          <strong class="me-auto">Bootstrap</strong>
+          <small class="text-muted">just now</small>
+          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+          See? Just like this.
+        </div>
+      </div>
+    <script src="app.js"></script>
   </body>
 </html>
