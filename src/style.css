@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif
+    font-family: 'Roboto', sans-serif;
 }
 
 body, html {
@@ -41,6 +42,7 @@ body, html {
 .header-content span {
     color: #D6000D;
     padding-left: 10px;
+    font-style: italic;
 }
 
 main {
@@ -85,6 +87,7 @@ footer {
 .main-content .btn.btn-danger {
     background-color: #D6000D;
     color: #fff;
+    border-color: #565e64;
 }
 
 .main-content .btn.btn-danger:hover {
@@ -164,10 +167,22 @@ footer {
     margin-top: 6px;
 }
 
+#liveToastBtn {
+    background-color: #D6000D;
+    width: 175px;
+    position: absolute;
+    margin-top: 6px;
+}
+
+#liveToastBtn:hover {
+    background-color: #000;
+    border-color: #565e64;
+}
+
 .btn.btn-primary.mb-3:hover {
         color: #fff;
         background-color: #000;
-        border-color: #b02a37;
+        border-color: #565e64;
 }
 
 .third-content {
@@ -281,10 +296,19 @@ footer {
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    padding: 30px 50px;
+    padding: 20px 50px;
     width: 600px;
     max-width: 100%;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.fa-solid.fa-xmark {
+    cursor: pointer;
 }
 
 
@@ -294,4 +318,65 @@ footer {
     width: 100%;
     height: 100%;
     backdrop-filter: blur(5px);
+}
+
+
+.form-floating, .mb-3 {
+    margin-bottom: 1rem!important;
+    width: 30vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-floating>.form-control {
+    padding: 1rem .75rem;
+    border: 2px solid black;
+}
+
+.form-floating>.form-control:focus {
+    padding: 1rem .75rem;
+    border: #000;
+    box-shadow: 0 0 0 0.25rem #D6000D;
+}
+
+.modal-login h2 {
+    color: #D6000D;
+    font-size: xxx-large;
+    font-style: italic;
+    padding-bottom: 30px;
+}
+
+.form-floating>label {
+    padding: 1rem 1.75rem!important;
+   
+}
+
+.modal-login .body-modal {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.modal-login .header-modal {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#create-new-account {
+    background-color: #D6000D;
+}
+
+.btn.btn-secondary, .forgot-password, #create-new-account {
+    margin-top: 10px;
+}
+
+.modal-login>.body-modal>.btn-secondary:hover, #create-new-account:hover {
+    color: #fff;
+    background-color: #000;
+    border-color: #565e64;
 }

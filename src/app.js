@@ -3,8 +3,9 @@ const openModalLogin = () => {
   const MODAL_CONTAINER = document.getElementById("modal-container1");
   const CLOSE_LOGIN = document.getElementById("close-login");
 
-  OPEN_LOGIN.addEventListener("click", () => {
+  OPEN_LOGIN.addEventListener("click", (event) => {
     MODAL_CONTAINER.classList.add("show");
+    event.preventDefault();
   });
 
   CLOSE_LOGIN.addEventListener("click", () => {
