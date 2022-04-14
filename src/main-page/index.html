@@ -20,14 +20,27 @@
           <h1><span>Codar</span>.</h1>
           <ul class="nav nav-pills nav-fill">
             <li class="nav-item">
-              <a class="nav-link">Início</a>
+              <a class="nav-link" href="http://127.0.0.1:5500/src/main-page/index.html">Início</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Serviços</a>
+              <a class="nav-link" href="#servicos">Serviços</a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="#">Contato</a>
+            </li> -->
+            <li class="nav-item" id="dropdownLI">
+              <div class="dropdown">
+                <a class="nav-link" type="button" id="openDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                  Contato
+                </a>
+                <ul class="dropdown-menu" id="dropdown" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="mailto:eletherioalexandre@gmail.com"><i class="fa-solid fa-envelope" id="profile-icons"></i> - E-mail</a></li>
+                  <li><a class="dropdown-item" href="https://www.linkedin.com/in/alexandre-eletherio-ab799719a/" target="_blank"><i class="fa-brands fa-linkedin" id="profile-icons"></i> - LinkedIn</a></li>
+                  <li><a class="dropdown-item" href="https://github.com/EletherioAlexandre" target="_blank"><i class="fa-brands fa-github profile-icons"></i> - GitHub</a></li>
+                </ul>
+              </div>
             </li>
+            
             <li class="nav-item">
               <button
                 class="nav-link active"
@@ -43,7 +56,7 @@
       <main>
         <div class="main-content">
           <div class="col">
-            <img src="../assets/video_call.png" alt="video_call" />
+            <img src="../../assets/video_call.png" alt="video_call" />
           </div>
           <div class="col">
             <p>Alavanque seu negócio com um <span>Website incrível</span></p>
@@ -59,10 +72,10 @@
         </div>
         <div class="secondary-content">
           <div class="col">
-            <img src="../assets/coding_.png" alt="coding" />
+            <img src="../../assets/coding_.png" alt="coding" />
           </div>
           <div class="col">
-            <ul class="fa-ul">
+            <ul class="fa-ul" id="servicos">
               <li>
                 <span class="fa-li"
                   ><i class="fa-solid fa-check-circle"></i
@@ -172,19 +185,19 @@
             <h3>Redes Sociais</h3>
             <a href="#"
               ><img
-                src="../assets/facebook-icon.svg"
+                src="../../assets/facebook-icon.svg"
                 alt="Facebook"
                 class="facebook"
             /></a>
             <a href="#"
               ><img
-                src="../assets/instagram-icon.svg"
+                src="../../assets/instagram-icon.svg"
                 alt="Instagram"
                 class="instagram"
             /></a>
             <a href="#"
               ><img
-                src="../assets/twitter-icon.svg"
+                src="../../assets/twitter-icon.svg"
                 alt="Twitter"
                 class="twitter"
             /></a>
@@ -209,34 +222,28 @@
           </div>
           <button type="button" class="btn btn-secondary">Entrar</button>
           <a href="#" target="_blank" class="forgot-password">Esqueceu sua senha?</a>
-          <button type="button" class="btn btn-danger" id="create-new-account">Criar nova conta</button>
+          <button type="button" class="btn btn-danger" id="create-new-account"><a href="../create-account/createAccount.html" target="_blank" class="create-account">Criar nova conta</a></button>
         </div>
       </div>
     </div>
-    <div class="modal-container-orcamento" id="modal-container-orcamento">
+    <!-- <div class="modal-container-orcamento" id="modal-container-orcamento">
       <div class="modal-orcamento" id="modal-orcamento">
-        <h2>Modal Orçamento</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore alias
-          exercitationem architecto voluptates temporibus eos nostrum corporis
-          mollitia perferendis id. Quod placeat, quas deserunt nobis reiciendis
-          possimus ut velit expedita.
-        </p>
-        <button id="close-orcamento">Close</button>
-      </div>
-    </div>
-    <div class="toast-container">
-      <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-        <div class="toast-header">
-          <img src="..." class="rounded me-2" alt="...">
-          <strong class="me-auto">Bootstrap</strong>
-          <small class="text-muted">just now</small>
-          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+          <div class="header-modal">
+            <h2>Avalie o meu projeto!</h2>
+            <i class="fa-solid fa-xmark" id="close-orcamento"></i>
+          </div>
+          <div class="body-modal">
+            <div>
+              <h5>Entre em contato comigo!</h5>
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="toast-body">
-          See? Just like this.
-        </div>
-      </div>
+      </div> -->
     <script src="app.js"></script>
     <script
     src="https://kit.fontawesome.com/d2c5d78823.js"

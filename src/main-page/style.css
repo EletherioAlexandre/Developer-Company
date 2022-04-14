@@ -276,7 +276,6 @@ footer {
     cursor: pointer;
 }
 
-
 .modal-container1, .modal-container-orcamento {
     background-color: rgba(0, 0, 0, 0.3);
     display: flex;
@@ -360,7 +359,7 @@ footer {
     align-items: center;
 }
 
-.modal-login .header-modal {
+.modal-login>.header-modal, .modal-orcamento>.header-modal {
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -369,6 +368,15 @@ footer {
 
 #create-new-account {
     background-color: #D6000D;
+}
+
+.create-account {
+    text-decoration: none;
+    color: #fff;
+}
+
+.create-account:hover {
+    color: #fff;
 }
 
 .btn.btn-secondary, .forgot-password, #create-new-account {
