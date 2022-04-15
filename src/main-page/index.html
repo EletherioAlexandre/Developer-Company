@@ -25,9 +25,6 @@
             <li class="nav-item">
               <a class="nav-link" href="#servicos">Serviços</a>
             </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link" href="#">Contato</a>
-            </li> -->
             <li class="nav-item" id="dropdownLI">
               <div class="dropdown">
                 <a class="nav-link" type="button" id="openDropdown" data-bs-toggle="dropdown" aria-expanded="false">
@@ -63,8 +60,8 @@
             <button
               type="button"
               class="btn btn-danger"
-              id="open-orcamento"
-              onclick="openModalOrcamento()"
+              id="triggerpopup"
+              onclick="TRIGGER_POPUP()"
             >
               Solicitar Orçamento
             </button>
@@ -116,7 +113,8 @@
               <button
               type="button"
               class="btn btn-danger"
-                id="liveToastBtn"
+              id="liveToastBtn"
+              onclick="CALL_USER()"
               >
                 Ligamos para você
               </button>
@@ -213,16 +211,16 @@
         </div>
         <div class="body-modal">
           <div class="form-floating mb-3">
-            <input type="email" class="form-control" id="floatingInput" />
+            <input type="email" class="form-control" id="floatingInput" required />
             <label for="floatingInput">E-mail</label>
           </div>
           <div class="form-floating">
-            <input type="password" class="form-control" id="floatingPassword" />
+            <input type="password" class="form-control" id="floatingPassword" required/>
             <label for="floatingPassword">Senha</label>
           </div>
-          <button type="button" class="btn btn-secondary">Entrar</button>
+          <button type="submit" class="btn btn-secondary">Entrar</button>
           <a href="#" target="_blank" class="forgot-password">Esqueceu sua senha?</a>
-          <button type="button" class="btn btn-danger" id="create-new-account"><a href="../create-account/createAccount.html" target="_blank" class="create-account">Criar nova conta</a></button>
+          <button type="button" class="btn btn-danger" id="create-new-account">Criar nova conta</button>
         </div>
       </div>
     </div>
@@ -244,6 +242,21 @@
           </div>
         </div>
       </div> -->
+      <div class="popup-container" id="popup-container">
+        <div class="popup-modal">
+          <div class="popup-content">
+            <i class="fa-solid fa-person-digging"></i>
+            Serviço em Manutenção...</div>
+          <i class="fa-solid fa-xmark" id="dismiss-popup"></i>
+        </div>
+      </div>
+      <div class="popup-ligacao" id="popup-ligacao">
+        <div class="popup-modal-lig">
+          <div class="popup-lig-content">
+            Enviado com sucesso!</div>
+            <i class="fa-solid fa-thumbs-up"></i>
+        </div>
+      </div>
     <script src="app.js"></script>
     <script
     src="https://kit.fontawesome.com/d2c5d78823.js"
