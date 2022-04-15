@@ -60,6 +60,7 @@ footer {
     grid-row: none;
     justify-items: center;
     margin-top: 30px;
+    font-style: italic;
 }
 
 .header-content .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
@@ -88,7 +89,6 @@ footer {
 .main-content .btn.btn-danger {
     background-color: #D6000D;
     color: #fff;
-    border-color: #565e64;
 }
 
 .main-content .btn.btn-danger:hover {
@@ -281,7 +281,7 @@ footer {
     cursor: pointer;
 }
 
-.modal-container1, .modal-container-orcamento {
+.modal-container1 {
     background-color: rgba(0, 0, 0, 0.3);
     display: flex;
     align-items: center;
@@ -296,7 +296,7 @@ footer {
     transition: 0.5s
 }
 
-.modal-login, .modal-orcamento {
+.modal-login {
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -316,7 +316,7 @@ footer {
 }
 
 
-.modal-container1.show, .modal-container-orcamento.showModalOrcamento {
+.modal-container1.show {
     opacity: 1;
     pointer-events: auto;
     width: 100%;
@@ -365,14 +365,18 @@ footer {
     align-items: center;
 }
 
-.modal-login>.header-modal, .modal-orcamento>.header-modal {
+.modal-login>.header-modal {
     display: flex;
     width: 100%;
     justify-content: space-between;
     text-align: center;
 }
 
-#create-new-account {
+.modal-login>.header-modal>h2>span {
+    color: black;
+}
+
+#notavailable {
     background-color: #D6000D;
 }
 
@@ -385,11 +389,11 @@ footer {
     color: #fff;
 }
 
-.btn.btn-secondary, .forgot-password, #create-new-account {
+.btn.btn-secondary, .forgot-password, #notavailable {
     margin-top: 10px;
 }
 
-.modal-login>.body-modal>.btn-secondary:hover, #create-new-account:hover {
+.modal-login>.body-modal>.btn-secondary:hover, #notavailable:hover {
     color: #fff;
     background-color: #000;
     border-color: #565e64;
@@ -428,7 +432,7 @@ footer {
     pointer-events: auto;
 }
 
-.popup-modal-lig {
+.popup-modal-lig, .popup-modal-soon {
     background-color: #5fef5c;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgb(0 0 0 / 20%);
@@ -443,6 +447,10 @@ footer {
     pointer-events: auto;
     justify-content: space-around;
     align-items: center;
+}
+
+.popup-modal-soon {
+    background-color: rgb(249, 190, 90);
 }
 
 .popup-container.open, .popup-ligacao.send {
@@ -462,4 +470,41 @@ footer {
     margin-right: 0;
 }
 
+.soon-modal.show {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 23vh;
+    width: 100vw;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    pointer-events: none;
+    opacity: 1;
+    transition: 1s;
+    margin-right: 450px;
+    margin-top: -13px;
+    z-index: 1;
+}
+
+.soon-modal {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 23vh;
+    width: 100vw;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    pointer-events: none;
+    opacity: 0;
+    transition: 1s;
+    margin-right: 450px;
+    margin-top: 0px;
+    z-index: 1;
+}
 

@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" href="../../assets/favicon-32x32.png">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <title>Homologação Grid</title>
+    <title>Codar.</title>
   </head>
   <body>
     <div class="container-body">
@@ -43,7 +44,6 @@
                 class="nav-link active"
                 aria-current="page"
                 id="open-login"
-                onclick="openModalLogin()"
                 >Login</a
               >
             </li>
@@ -61,7 +61,6 @@
               type="button"
               class="btn btn-danger"
               id="triggerpopup"
-              onclick="TRIGGER_POPUP()"
             >
               Solicitar Orçamento
             </button>
@@ -114,7 +113,6 @@
               type="button"
               class="btn btn-danger"
               id="liveToastBtn"
-              onclick="CALL_USER()"
               >
                 Ligamos para você
               </button>
@@ -181,19 +179,19 @@
           </div>
           <div class="grid-4">
             <h3>Redes Sociais</h3>
-            <a href="#"
+            <a href="https://discord.com/invite/yvYXhGj" target="_blank"
               ><img
                 src="../../assets/facebook-icon.svg"
                 alt="Facebook"
                 class="facebook"
             /></a>
-            <a href="#"
+            <a href="https://www.instagram.com/devchallenge/" target="_blank"
               ><img
                 src="../../assets/instagram-icon.svg"
                 alt="Instagram"
                 class="instagram"
             /></a>
-            <a href="#"
+            <a href="https://twitter.com/dev_challenge" target="_blank"
               ><img
                 src="../../assets/twitter-icon.svg"
                 alt="Twitter"
@@ -206,7 +204,7 @@
     <div class="modal-container1" id="modal-container1">
       <div class="modal-login">
         <div class="header-modal">
-          <h2>Codar.</h2>
+          <h2>Codar<span>.</span></h2>
           <i class="fa-solid fa-xmark" id="close-login"></i>
         </div>
         <div class="body-modal">
@@ -220,28 +218,10 @@
           </div>
           <button type="submit" class="btn btn-secondary">Entrar</button>
           <a href="#" target="_blank" class="forgot-password">Esqueceu sua senha?</a>
-          <button type="button" class="btn btn-danger" id="create-new-account"><a href="../pages/createAccount.html" target="_blank" class="create-account">Criar nova conta</a></button>
+          <button type="button" class="btn btn-danger" id="notavailable">Criar nova conta</button>
         </div>
       </div>
     </div>
-    <!-- <div class="modal-container-orcamento" id="modal-container-orcamento">
-      <div class="modal-orcamento" id="modal-orcamento">
-          <div class="header-modal">
-            <h2>Avalie o meu projeto!</h2>
-            <i class="fa-solid fa-xmark" id="close-orcamento"></i>
-          </div>
-          <div class="body-modal">
-            <div>
-              <h5>Entre em contato comigo!</h5>
-              <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div> -->
       <div class="popup-container" id="popup-container">
         <div class="popup-modal">
           <div class="popup-content">
@@ -255,6 +235,13 @@
           <div class="popup-lig-content">
             Enviado com sucesso!</div>
             <i class="fa-solid fa-thumbs-up"></i>
+        </div>
+      </div>
+      <div class="soon-modal" id="soon-modal">
+        <div class="popup-modal-soon">
+          <div class="popup-soon-content">
+            Disponível em breve..</div>
+            <i class="fa-solid fa-laptop-code"></i>
         </div>
       </div>
     <script src="../app.js"></script>
